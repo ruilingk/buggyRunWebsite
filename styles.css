@@ -1,0 +1,459 @@
+/* Global styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* brand icon */
+.nav-brand {
+    width: 2rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.nav-brand p {
+    color: #fafafa;
+    font-style: bold;
+    font-size: 20px;
+}
+
+/* menu icons */
+.menu-icons i {
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+/* close icon */
+.close i {
+    color: black;
+}
+
+/* for the navigation links at the side */
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+/* use javascript to open navigation links */
+.nav-list.active {
+    right: 0;
+}
+
+/* for the close button */
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* introduction */
+.introduction {
+    width: 100%;
+    height: 80vh;
+    background: url("https://wallpaperset.com/w/full/8/3/d/236046.jpg") center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.introduction::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4.7rem; /* height of wave-small.png */
+    background: url("images/wave-small.png") center no-repeat;
+    background-size: cover;
+}
+
+.main-message {
+    width: 100%;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(20%);
+}
+
+.main-message h3 {
+    font-size: 1.8rem;
+}
+
+.main-message h1 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0;
+    letter-spacing: 5px;
+}
+
+.main-message p {
+    text-transform: lowercase;
+    font-size: 1.4rem;
+    text-shadow: 1px 1.2px 0 black;
+}
+
+/* about us */
+.about-us {
+    padding: 0;
+}
+
+.title-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.title-heading h3 {
+    font-size: 1.7rem;
+}
+
+.title-heading h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.title-heading p {
+    text-transform: lowercase;
+}
+
+.our-product {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.our-product h3 {
+    font-size: 1.7rem;
+}
+
+.our-product h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.our-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.our-product-grid-feature {
+    height: 40rem;
+    padding: 5rem;
+    color: #fafafa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.our-product-grid-feature:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.customisation {
+    background: url("https://steamuserimages-a.akamaihd.net/ugc/270598716229795053/6A21D0150328351028A4C27D083221453D76C5A4/") fixed;
+}
+
+.obstacles {
+    background: url("https://steamuserimages-a.akamaihd.net/ugc/270598716229795053/6A21D0150328351028A4C27D083221453D76C5A4/") fixed;
+}
+
+.memes {
+    background: url("https://steamuserimages-a.akamaihd.net/ugc/270598716229795053/6A21D0150328351028A4C27D083221453D76C5A4/") fixed;
+}
+
+.our-product-grid-feature i {
+    font-size: 4rem;
+    color: #fafafa;
+}
+
+.our-product-grid-feature h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    color: #fafafa;
+    font-style: normal;
+}
+
+.our-product-grid-feature p {
+    color: #fafafa;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+/* review */
+.reviews {
+    width: 100%;
+    height: 80vh;
+    background: url("https://www.itl.cat/pngfile/big/32-323881_wallpaper-city-futurism-cyberpunk-sci-fi-dark.jpg") center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.reviews:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 4.6rem;
+    background: url(images/wave-small-reversed.png) center no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+}
+
+.review {
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.review-text-box {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    position: relative;
+}
+
+.review-text-box i {
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #d7d4ed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.review-customer img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #fafafa;
+}
+
+/* contact us */
+.particulars {
+    text-align: center;
+    margin-top: -50px;
+}
+
+footer {
+    padding: 2.5rem 0;
+    background-color: black;
+    text-align: center;
+    color: #fafafa;
+}
+
+/* media queries */
+@media screen and (min-width: 350px) {
+    .main-message {
+        transform: translateY(40%);
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .introduction::before {
+        height: 9.4rem;
+        background: url("images/wave-medium.png");
+        background-size: cover;
+    }
+
+    .testimonials::before {
+        height: 9.4rem;
+        background: url("images/wave-medium-reversed.png");
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        height: 8rem;
+    }
+
+    .nav-brand {
+        width: 3.5rem;
+    }
+
+    .nav-list {
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+
+    .menu-icons {
+        display: none;
+    }
+
+    .nav-item {
+        margin: 0 2.5rem;
+    }
+
+    .nav-link,
+    .current {
+        color: #fafafa;
+        position: relative;
+        font-size: 1.3rem;
+    }
+
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        background-color: #fafafa;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+
+    .current::before {
+        transform: scaleX(1);
+    }
+
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+
+    .introduction {
+        height: 60vh;
+    }
+
+    .main-message {
+        transform: translateY(20%);
+    }
+
+    .title-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .our-product h1 {
+        font-size: 2.5rem;;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .introduction::before {
+        height: 22.7rem;
+        background: url("images/wave-large.png");
+        background-size: cover;
+    }
+
+    .testimonials::before {
+        height: 22.7rem;
+        background: url("images/wave-large-reversed.png");
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .introduction {
+        height: 75vh;
+    }
+}
